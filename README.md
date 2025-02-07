@@ -1,1 +1,1 @@
-# Swedish-phonetic-alphabet-translator
+This is a python program that can translate any word into the swedish phonetic alphabet. Disclaimer: This only works with the swedish keyboard/alphabet. it doesn't work with any other alphabets that contains special letters.
