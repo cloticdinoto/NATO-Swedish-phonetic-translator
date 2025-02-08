@@ -6,10 +6,15 @@ bokstaveringsalfabet = {
     "U": "URBAN", "V": "VIKTOR", "W": "WILHELM", "X": "XERXES", "Y": "YNGVE",
     "Z": "ZÄTA", "Å": "ÅKE", "Ä": "ÄRLIG", "Ö": "ÖSTEN", "0": "NOLLA", "1": "ETT",
     "2": "TVÅA", "3": "TREA", "4": "FYRA", "5": "FEMMA", "6": "SEXA", "7": "SJU",
-    "8": "ÅTTA", "9": "NIA"
+    "8": "ÅTTA", "9": "NIA", " ": "(mellanslag)", ".": "(punkt)", ",": "(komma)",
+    "/": "(bråksträck)", "-": "(bindestreck/minustecken)", "(": "(vänsterparentes)",")": "(högerparantes)",
+    ":": "(kolon)", ";": "(semikolon)", "?": "(frågetecken)", "@": "(snabel-a)", 
+    '"': "(anföringstecken)", "=": "(likhetstecken)", "#": "(brädgård)",
+    "*": "(stjärna)", "+": "(plustecken)", "§": "(paragraf)", "%": "(procent)",
+    "<": "(mindre än)", ">": "(större än)"
 }
 
-print("SKRIV IN DITT ORD:")
+print("SKRIV IN ORD ELLER MENING:")
 ord = input()
 
 def bokstaveraOrd(text):
@@ -18,6 +23,7 @@ def bokstaveraOrd(text):
     for bokstav in text:
         kodord = bokstaveringsalfabet.get(bokstav, bokstav)
         bokstavsOrden.append(kodord)
+    print("---")
     print(" - ".join(bokstavsOrden))
     
 bokstaveraOrd(ord)
